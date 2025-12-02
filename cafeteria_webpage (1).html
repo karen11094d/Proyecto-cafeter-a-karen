@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafetería Dulce Aroma</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f8f4ef;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-size: 4.5rem;
+      font-family: 'Times New Roman', serif;
+      letter-spacing: 3px;
+      background: rgba(0,0,0,0.4);
+      padding: 10px 25px;
+      border-radius: 10px;
+    }
+    nav {
+      background-color: #6b4f3a;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffdd99;
+      text-shadow: 0 0 8px rgba(255,255,255,0.7);
+    }
+    h2 {
+      font-family: 'Georgia', serif;
+      font-size: 2.3rem;
+      color: #6b4f3a;
+      border-left: 6px solid #c2996b;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    p, li {
+      font-size: 1.15rem;
+    }
+    .section {
+      padding: 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    footer {
+      background-color: #6b4f3a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 1.1rem;
+      margin-top: 50px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cafetería Dulce Aroma</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre Nosotros</a>
+    <a href="#menu">Menú</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="section" id="sobre">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En Cafetería Dulce Aroma creemos que un buen café puede transformar tu día. 
+      nuestra misión es crear un espacio cálido donde cada cliente pueda disfrutar de 
+      bebidas preparadas con granos de gran calidad y una variedad de postres artesanales,
+      además contamos con pedidos adomicilio para que puedan disfrutar de un buen cafe desde
+      la comodidad de tu casa.
+
+      Y Recuerda a mal tiempo un buen café mejora tu dia 
+    </p>
+  </section>
+
+  <section class="section" id="menu">
+    <h2>Menú Destacado</h2>
+    <ul>
+      <li>Café Latte — $45</li>
+      <li>Capuchino — $50</li>
+      <li>Mocha Frío — $55</li>
+      <li>Café Americano -$40</li>
+      <li>Cheesecake de Frutos Rojos — $70</li>
+      <li>Galletas Artesanales — $25</li>
+    </ul>
+  </section>
+
+  <section class="section" id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="Café 1" />
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Café 2" />
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Postre" />
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Interior" />
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Dirección: Calle Aroma #123, Centro</p>
+    <p>📞 Teléfono: 961 123 4567</p>
+    <p>⏰ Horarios: Lunes a Viernes — 8:00 AM a 8:00 PM</p>
+  </section>
+
+  <footer>
+    © 2025 Cafetería Dulce Aroma — Todos los derechos reservados Karen Díaz
+  </footer>
+</body>
+</html>
